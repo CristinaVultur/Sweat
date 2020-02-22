@@ -1,0 +1,38 @@
+
+article {
+	overflow:auto;
+	
+}
+.side li{
+	padding:0 1em 0 1em;
+}
+.side a{
+	color:#5c3f5a;
+	text-decoration:none;
+	text-transform:uppercase;
+	
+	
+}
+.container img{
+	float:left;
+	width:10em;
+    height:10em;
+}
+.exercitiu
+{
+	font-size:1em;
+}
+#but{
+	display:block;
+	float:right;
+	margin-top: 2em;
+	left: 1.5em;
+	background-color: #5c3f5a;
+	text-decoration:none;
+}
+.patratel{
+	background-color:red;
+	padding:0.4em 0.4em 0.4em 0.4em;
+	float:right;
+	
+}

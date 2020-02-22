@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="shortcut icon" type="image/x-icon" href="img/fitness-favicon.ico"/>
+	<meta name="author" content="Vultur Cristina">
+    <meta name="keywords" content="Contact,Phone number,Message,Email,Name,Send">
+    <meta name="description" content="Do you have anything you want to ask us?Go away.Here is a contact form to fill out.">
+	<link rel="stylesheet" type="text/css" href="css/proiect.css"/>
+	<link rel="stylesheet" type="text/css" href="css/contact.css"/>
+	<title>The sweat life | Contact</title>
+</head>
+
+<body>
+	<%- include("../fragmente/top_button") %>
+	<header>
+		<%- include("../fragmente/header") %>
+	</header>
+		
+	
+<main id="inside">
+	
+		<form method="post" class="date, inside">
+		<h1>Inregistrare user:</h1>
+		<div class="txtb">
+			<label>Username:</label>
+			<input type="text"   name="username" placeholder="Enter your username">
+		</div>
+		<div class="txtb">
+			<label>Name:</label>
+			<input type="text"  name="nume" placeholder="Enter your name">
+		</div>
+		<div class="txtb">
+			<label>Email:</label>
+			<input type="email" name="email" placeholder="Enter your email">
+		</div>
+		<div class="txtb">
+			<label>Password:</label>
+			<input type="password" name="parola" placeholder="Enter your password">
+		</div>
+		<button type="submit" class="button_2">Send</button>
+		</form>
+</main>
+	<footer id="modif">
+		<%- include("../fragmente/footer") %>
+	</footer>
+</body>
+</html>

@@ -1,0 +1,16 @@
+<div class="container" id="<%=exercitiu.id%>">
+	<article class="exercitiu , <%=exercitiu.categorie %>" >
+		<button id="but<%=exercitiu.id %>">X</button>
+		<h2> e<%=exercitiu.id %>.<%= exercitiu.nume %></h2>
+		<p id="durata">Durata: <%= exercitiu.durata %> minute</p>		
+		<p>Data incepere training:</p> <p class="data"><%= exercitiu.data %></p>
+		<p id="dificultate">Muschi Folositi: <%=exercitiu.muschi %> Dificultate: <%=exercitiu.dificultate%> </p>
+		<p id="aparat">Necesita aparat: <%=exercitiu.aparat %></p>
+		<img src="/uploads/<%= exercitiu.imagine %>" alt="[<%= exercitiu.nume %> nu are poza]" />
+		<p id="descriere"><%= exercitiu.descriere %></p>		
+		<p id="categorie"><%= exercitiu.categorie %></p>
+		<div class="patratel"> </div>
+		<p class="debug"></p>
+	</article>
+	
+</div>

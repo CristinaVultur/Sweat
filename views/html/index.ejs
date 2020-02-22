@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="shortcut icon" type="image/x-icon" href="img/fitness-favicon.ico"/>
+	<meta name="author" content="Vultur Cristina">
+    <meta name="keywords" content="fitness,Workouts,Gym,fit,healthy,life,Motivation,Diet">
+    <meta name="description" content="Have your ever tought about startig a healhy lifestyle but you don't know where to start? You have all the aswers here. Eliminate your toxic habbits and start living better with The Sweat Life.">
+	<link rel="stylesheet" type="text/css" href="../css/proiect.css"/>
+	<link rel="stylesheet" type="text/css" href="../css/index.css"/>
+	<title>The sweat life | Welcome</title>
+</head>
+
+<body>
+	
+	<header>
+		<%- include("../fragmente/header") %>
+	</header>
+	<%- include("../fragmente/top_button") %>
+	
+<main>	
+	<section id="showcase">
+		<div class="container">
+			<h2>The sweat life, your everywhere gym guide</h2>
+			<p>Dare to make a change</p>
+		</div>
+	</section>
+		<%if(!locals.user){ %>
+	<section id="newsletter">
+		<div class="container">
+			<h2>Login to your account:</h2>
+			<form method="post">
+				<label><input type="text" name="username" placeholder="enter username"></label>
+				<label><input type="password" name="parola" placeholder="enter password"></label>
+				<button type="submit" class="button_1">Login</button>
+			</form>
+		</div>
+	</section>
+	<% }%>
+	<div class="row">
+		<section class="side">
+			<h2>Getting started</h2>
+			<section>
+			<h3>Begin</h3>
+			<div class="gs_img"></div>
+			<p> It matters that you start now, not monday, not tomorrow. </p>
+			<h3> Motivation</h3>
+			<div class="mv_img"></div>
+			</section>
+		</section>
+		<section class="main">
+			
+				<h2>Why going to the gym is important?</h2>
+				<img src="img/45ee36f9e15e81c279e731e9d9aafb27.jpg" alt="woman tranformation" title="tranformation">		
+				<img src="img/cc7de1ad7270665bde53fd8eeb18d13c.jpg" alt="man tranformation" title="tranformation">				
+				<section id="paragraph">
+					<p>Gym not only makes you fit physically but also mentally. In current busy life schedule people are neglecting the most important asset of their life i.e. their own health. Regular exercise carries many physical and mental health benefits. It boosts the brainpower and sharpens our memory, one can improve self confidence.</p>
+					<h3>What are you going to find here?</h3>
+					<section>
+						<h4>Workouts</h4>
+							<p>A strong workout is the secret to staying fit and enjoying the process. Help your readers to create their own workouts or discover which exercises to try at home, at the gym, or outdoors.</p>
+						<h4>Fitness for Beginners</h4>
+							<p>It can be hard to know where to start with fitness. Lots of people know they want to get fit and healthy, but don’t know what to do first. Inspire and help your readers to get the best start on their journey.</p>
+						<h4>Diet and Nutrition</h4>
+							<p>A healthy, balanced diet often complements your workouts and can lead to better results. Help your readers figure out the positive changes they can make to their diet to stay healthy and fuel their fitness.</p>
+						<h4>Inspiration and Motivation</h4>
+							<p>We all know that staying fit and healthy is good for us, but often it’s lack of motivation that means we fall back into old habits. Help your readers feel inspired again with motivational content, tips and tricks, and encouragement to stay focused.</p>
+					</section>
+				</section>
+			
+		</section>	
+	</div>
+</main>
+	<footer>
+		<%- include("../fragmente/footer") %>
+	</footer>
+</body>
+</html>

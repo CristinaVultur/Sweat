@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="shortcut icon" type="image/x-icon" href="img/fitness-favicon.ico"/>
+	<meta name="author" content="Vultur Cristina">
+    <meta name="keywords" content="workout,push,pull,legs,abs,arms,bicep,tricep,glutes,hamstrings,quads,back,rear delts,shoulders">
+    <meta name="description" content="Most of the people who are starting to workout either do to little in the gym or too much. They don't know who to program they workouts. Here are some examples that you can choose from">
+	<link rel="stylesheet" type="text/css" href="css/proiect.css"/>
+	<link rel="stylesheet" type="text/css" href="css/workouts.css"/>
+	
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+	<script src="https://code.jquery.com/jquery-3.4.1.js"></script>
+	<script src="../script/app.js"></script>
+	<title>The sweat life | Workouts</title>
+	
+</head>
+
+<body>
+	
+<main class="row">	
+
+	<section class="side">
+			<h1>Exercitii</h1>
+	</section>
+        
+	<%- include("../fragmente/top_button") %>
+	<header>
+		<%- include("../fragmente/header") %>
+	</header>
+	<div class="main" id="modif">
+		<% for (var i = 0; i < exercitiu.length; i++) { 
+		%>	
+		<%- include('../fragmente/template_exercitiu', {exercitiu: exercitiu[i]}) 
+		%>
+	<% } %>
+		
+	</div>
+	
+		
+</main>
+
+<footer>
+		<%- include("../fragmente/footer") %>
+</footer>
+</body>
+</html>

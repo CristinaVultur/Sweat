@@ -1,0 +1,26 @@
+<div class="container">
+			<div id="branding">
+				<h1>The Sweat Life</h1>
+			</div>
+			<nav>
+				<ul>
+					<li> <a class="active" href="index">Home</a></li>
+					<li><a href="workouts">Workouts</a></li>
+					<li><a href="recepies">Recepies</a></li>
+					<li><div id="tpp">Tips and tricks</div>
+						<ul class="submenu">
+							<li><a href="tips">Lose-weight</a></li>
+							<li><a href="gain">Gain-muscle</a></li>
+						</ul>
+					</li>	
+					
+					<li><a href="contact" >New user</a></li>
+					<% if(locals.user){ %>
+					<li><a href="logout">Logout</a></li>
+					<% } %>
+				</ul>
+			</nav>
+			<% if(locals.user){ %>
+			<p class="salut">Hi,<br/><%= user.username %></p>
+			<% } %>
+		</div>

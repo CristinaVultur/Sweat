@@ -1,0 +1,25 @@
+{
+  "name": "proiect",
+  "version": "1.0.1",
+  "description": "sper sa mearga",
+  "main": "javasc.js",
+  "dependencies": {
+    "ejs": "^3.0.1",
+    "express": "^4.17.1",
+    "express-formidable": "^1.2.0",
+    "express-session": "^1.17.0",
+    "jquery": "^3.4.1",
+    "nodemailer": "^6.4.2",
+    "socket.io": "^2.3.0"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "jnwciuwe",
+    "ivc"
+  ],
+  "author": "vultur cristina",
+  "license": "ISC"
+}
